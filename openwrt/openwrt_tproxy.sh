@@ -8,10 +8,10 @@
 #################################################
 
 # 配置参数
-BACKEND_URL=""  # 转换后端地址
-SUBSCRIPTION_URL=""  # 订阅地址
-TEMPLATE_URL="https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/master/config/singbox/config_tproxy.json"  # 配置文件（规则模板)
-TPROXY_PORT=7895  # sing-box tproxy 端口，和配置文件（规则模板）里的端口一致！
+BACKEND_URL="http://192.168.88.177:25500"  # 转换后端地址
+SUBSCRIPTION_URL="http://192.168.88.177:3001/kuALhi0P53RNQnaWhUsZ/download/collection/ALL_all9898?target=sing-box"  # 订阅地址
+TEMPLATE_URL="https://github.com/JasonNZ668/ruleconfig/raw/refs/heads/main/config/singbox/config_tproxy.json"  # 配置文件（规则模板)
+TPROXY_PORT=12345  # sing-box tproxy 端口，和配置文件（规则模板）里的端口一致！
 PROXY_FWMARK=1
 PROXY_ROUTE_TABLE=100
 MAX_RETRIES=3  # 最大重试次数
