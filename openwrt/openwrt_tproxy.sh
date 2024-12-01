@@ -210,8 +210,9 @@ if ! nft -f /etc/nftables.d/99-singbox.nft; then
 fi
 
 # 配置路由规则
-ip rule del table $PROXY_ROUTE_TABLE >/dev/null 2>&1  # 删除已存在的规则
-ip rule add fwmark $PROXY_FWMARK table $PROXY_ROUTE_TABLE
+# ip rule del table $PROXY_ROUTE_TABLE >/dev/null 2>&1  # 删除已存在的规则
+# ip rule add fwmark $PROXY_FWMARK table $PROXY_ROUTE_TABLE
+
 # 配置路由规则
 ip rule del table $PROXY_ROUTE_TABLE >/dev/null 2>&1  # 删除已存在的规则
 ip rule add fwmark $PROXY_FWMARK table $PROXY_ROUTE_TABLE
