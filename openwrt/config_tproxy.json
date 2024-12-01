@@ -53,7 +53,14 @@
       "listen_port": 20080,
       "sniff": true,
       "users": []
-    }
+    },
+    {
+      "type": "direct",
+      "listen": "0.0.0.0",
+      "listen_port": 53,
+      "sniff": true,
+      "tag": "dns-in"
+    }    
   ],
 
    "outbounds": [
