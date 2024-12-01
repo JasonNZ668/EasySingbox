@@ -84,7 +84,8 @@
     { "tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "exclude", "keywords": ["网站|地址|剩余|过期|时间|有效"] }], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 },
     { "tag": "GLOBAL", "type": "selector", "outbounds": ["{all}"]},
     { "tag": "🎯 全球直连", "type": "direct", "routing_mark": 100 },
-    { "tag": "dns-out", "type": "dns" }
+    { "tag": "dns-out", "type": "dns" },
+    { "tag": "socks8815", "type": "socks", "server": "192.168.88.15", "server_port": 20080, "version": "5" }
   ],
   
   "route": {
